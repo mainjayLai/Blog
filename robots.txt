@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://mainjaylai.github.io/Blog
+Sitemap: https://mainjaylai.github.io/Blog/sitemap.xml

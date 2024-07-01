@@ -1,0 +1,444 @@
+2:I[6379,["231","static/chunks/231-5b9cc957dcb59a69.js","166","static/chunks/166-a4da3a395e7e1b9d.js","404","static/chunks/app/blog/page-18a309f19797cadf.js"],"default"]
+1b1:I[9275,[],""]
+1b2:I[1343,[],""]
+1b3:I[8700,["231","static/chunks/231-5b9cc957dcb59a69.js","173","static/chunks/173-d075c26a103818f2.js","885","static/chunks/885-d80fdb5826b88e4b.js","185","static/chunks/app/layout-b8c3a1171ef12ae3.js"],"ThemeProviders"]
+1b4:I[4080,["231","static/chunks/231-5b9cc957dcb59a69.js","173","static/chunks/173-d075c26a103818f2.js","885","static/chunks/885-d80fdb5826b88e4b.js","185","static/chunks/app/layout-b8c3a1171ef12ae3.js"],""]
+1b5:I[9032,["231","static/chunks/231-5b9cc957dcb59a69.js","173","static/chunks/173-d075c26a103818f2.js","885","static/chunks/885-d80fdb5826b88e4b.js","185","static/chunks/app/layout-b8c3a1171ef12ae3.js"],"KBarSearchProvider"]
+1b6:I[231,["231","static/chunks/231-5b9cc957dcb59a69.js","173","static/chunks/173-d075c26a103818f2.js","797","static/chunks/app/blog/%5B...slug%5D/page-27f39e65b1cdcd7d.js"],""]
+1b7:I[8173,["231","static/chunks/231-5b9cc957dcb59a69.js","173","static/chunks/173-d075c26a103818f2.js","797","static/chunks/app/blog/%5B...slug%5D/page-27f39e65b1cdcd7d.js"],"Image"]
+1b8:I[509,["231","static/chunks/231-5b9cc957dcb59a69.js","173","static/chunks/173-d075c26a103818f2.js","885","static/chunks/885-d80fdb5826b88e4b.js","185","static/chunks/app/layout-b8c3a1171ef12ae3.js"],"KBarButton"]
+1b9:I[1398,["231","static/chunks/231-5b9cc957dcb59a69.js","173","static/chunks/173-d075c26a103818f2.js","885","static/chunks/885-d80fdb5826b88e4b.js","185","static/chunks/app/layout-b8c3a1171ef12ae3.js"],"default"]
+1ba:I[8976,["231","static/chunks/231-5b9cc957dcb59a69.js","173","static/chunks/173-d075c26a103818f2.js","885","static/chunks/885-d80fdb5826b88e4b.js","185","static/chunks/app/layout-b8c3a1171ef12ae3.js"],"default"]
+4:["databse"]
+5:{"text":"8 min read","minutes":7.155,"time":429300,"words":1431}
+7:{"value":"1. 共享锁（Shared Lock，S Lock）","url":"#1-共享锁shared-locks-lock","depth":3}
+8:{"value":"2. 排他锁（Exclusive Lock，X Lock）","url":"#2-排他锁exclusive-lockx-lock","depth":3}
+9:{"value":"3. 更新锁（Update Lock，U Lock）","url":"#3-更新锁update-locku-lock","depth":3}
+a:{"value":"4. 模式锁（Schema Lock）","url":"#4-模式锁schema-lock","depth":3}
+b:{"value":"5. 批量更新锁（Bulk Update Lock，BU Lock）","url":"#5-批量更新锁bulk-update-lockbu-lock","depth":3}
+c:{"value":"6. 键范围锁（Key-Range Lock）","url":"#6-键范围锁key-range-lock","depth":3}
+d:{"value":"7. 行级锁（Row-Level Lock）","url":"#7-行级锁row-level-lock","depth":3}
+e:{"value":"8. 页级锁（Page-Level Lock）","url":"#8-页级锁page-level-lock","depth":3}
+f:{"value":"9. 表级锁（Table-Level Lock）","url":"#9-表级锁table-level-lock","depth":3}
+6:["$7","$8","$9","$a","$b","$c","$d","$e","$f"]
+12:{"@type":"Person","name":"mainJayLai"}
+11:["$12"]
+10:{"@context":"https://schema.org","@type":"BlogPosting","headline":"数据库锁之间有哪些区别？","datePublished":"2024-07-01T00:00:00.000Z","dateModified":"2024-07-01T00:00:00.000Z","description":"数据库锁（Database Locks）是确保数据一致性和完整性的重要机制，防止多个事务同时访问同一数据资源导致数据冲突。不同类型的锁有不同的特性和用途。","image":"/static/images/twitter-card.png","url":"https://mainjaylai.github.io/Blog/blog/database/lock","author":"$11"}
+3:{"title":"数据库锁之间有哪些区别？","date":"2024-07-01T00:00:00.000Z","tags":"$4","draft":false,"summary":"数据库锁（Database Locks）是确保数据一致性和完整性的重要机制，防止多个事务同时访问同一数据资源导致数据冲突。不同类型的锁有不同的特性和用途。","layout":"PostSimple","type":"Blog","readingTime":"$5","slug":"database/lock","path":"blog/database/lock","filePath":"blog/database/lock.mdx","toc":"$6","structuredData":"$10"}
+14:["paper reading","network security"]
+15:{"text":"973 min read","minutes":972.625,"time":58357500,"words":194525}
+17:{"value":"目录","url":"#目录-1","depth":2}
+18:{"value":"前言知识","url":"#前言知识","depth":2}
+19:{"value":"定义","url":"#定义","depth":2}
+1a:{"value":"战术详解","url":"#战术详解","depth":2}
+1b:{"value":"一、 侦察","url":"#一-侦察","depth":3}
+1c:{"value":"1. 主动扫描","url":"#1-主动扫描","depth":4}
+1d:{"value":"IP扫描","url":"#ip扫描","depth":5}
+1e:{"value":"漏洞扫描","url":"#漏洞扫描","depth":5}
+1f:{"value":"字表扫描","url":"#字表扫描","depth":5}
+20:{"value":"2.收集受害者宿主信息","url":"#2收集受害者宿主信息","depth":4}
+21:{"value":"硬件","url":"#硬件","depth":5}
+22:{"value":"软件","url":"#软件","depth":5}
+23:{"value":"固件","url":"#固件","depth":5}
+24:{"value":"客户端配置","url":"#客户端配置","depth":5}
+25:{"value":"3.收集受害者身份信息","url":"#3收集受害者身份信息","depth":4}
+26:{"value":"资格证书","url":"#资格证书","depth":5}
+27:{"value":"电子邮件地址","url":"#电子邮件地址","depth":5}
+28:{"value":"员工姓名","url":"#员工姓名","depth":5}
+29:{"value":"4.收集受害者网络信息","url":"#4收集受害者网络信息","depth":4}
+2a:{"value":"域属性","url":"#域属性","depth":5}
+2b:{"value":"域名服务器","url":"#域名服务器","depth":5}
+2c:{"value":"网络信任依赖项","url":"#网络信任依赖项","depth":5}
+2d:{"value":"网络拓扑","url":"#网络拓扑","depth":5}
+2e:{"value":"IP地址","url":"#ip地址","depth":5}
+2f:{"value":"网络安全设备","url":"#网络安全设备","depth":5}
+30:{"value":"5.收集受害者组织信息","url":"#5收集受害者组织信息","depth":4}
+31:{"value":"确定物理位置","url":"#确定物理位置","depth":5}
+32:{"value":"业务关系","url":"#业务关系","depth":5}
+33:{"value":"识别业务时间","url":"#识别业务时间","depth":5}
+34:{"value":"确定角色","url":"#确定角色","depth":5}
+35:{"value":"6.信息网络钓鱼","url":"#6信息网络钓鱼","depth":4}
+36:{"value":"网络钓鱼服务","url":"#网络钓鱼服务","depth":5}
+37:{"value":"网络钓鱼附件","url":"#网络钓鱼附件","depth":5}
+38:{"value":"网络钓鱼链接","url":"#网络钓鱼链接","depth":5}
+39:{"value":"网络钓鱼语音","url":"#网络钓鱼语音","depth":5}
+3a:{"value":"7.搜索关闭的源","url":"#7搜索关闭的源","depth":4}
+3b:{"value":"威胁英特尔供应商","url":"#威胁英特尔供应商","depth":5}
+3c:{"value":"采购技术数据","url":"#采购技术数据","depth":5}
+3d:{"value":"8.搜索开放的技术数据库","url":"#8搜索开放的技术数据库","depth":4}
+3e:{"value":"DNS/被动DNS","url":"#dns被动dns","depth":5}
+3f:{"value":"WHOIS","url":"#whois","depth":5}
+40:{"value":"数字证书","url":"#数字证书","depth":5}
+41:{"value":"CDN","url":"#cdn","depth":5}
+42:{"value":"扫描数据库","url":"#扫描数据库","depth":5}
+43:{"value":"9.搜索打开的网站/域","url":"#9搜索打开的网站域","depth":4}
+44:{"value":"社会化媒体","url":"#社会化媒体","depth":5}
+45:{"value":"搜索引擎","url":"#搜索引擎","depth":5}
+46:{"value":"代码存储库","url":"#代码存储库","depth":5}
+47:{"value":"10.搜索受害者拥有的网站","url":"#10搜索受害者拥有的网站","depth":4}
+48:{"value":"二、资源开发","url":"#二资源开发","depth":3}
+49:{"value":"1.获取访问权限","url":"#1获取访问权限","depth":4}
+4a:{"value":"2.收购基础设施","url":"#2收购基础设施","depth":4}
+4b:{"value":"域","url":"#域","depth":5}
+4c:{"value":"DNS服务器","url":"#dns服务器","depth":5}
+4d:{"value":"虚拟专用服务器","url":"#虚拟专用服务器","depth":5}
+4e:{"value":"服务器","url":"#服务器","depth":5}
+4f:{"value":"Botnet","url":"#botnet","depth":5}
+50:{"value":"Web服务","url":"#web服务","depth":5}
+51:{"value":"无服务器","url":"#无服务器","depth":5}
+52:{"value":"恶意广告","url":"#恶意广告","depth":5}
+53:{"value":"3.入侵账户","url":"#3入侵账户","depth":4}
+54:{"value":"社交媒体账户","url":"#社交媒体账户","depth":5}
+55:{"value":"电子邮件账户","url":"#电子邮件账户","depth":5}
+56:{"value":"云账户","url":"#云账户","depth":5}
+57:{"value":"4.入侵基础设施","url":"#4入侵基础设施","depth":4}
+58:{"value":"域名","url":"#域名","depth":5}
+59:{"value":"DNS服务器","url":"#dns服务器-1","depth":5}
+5a:{"value":"虚拟专用服务器（VPS）","url":"#虚拟专用服务器vps","depth":5}
+5b:{"value":"服务器","url":"#服务器-1","depth":5}
+5c:{"value":"僵尸网络","url":"#僵尸网络","depth":5}
+5d:{"value":"网络服务","url":"#网络服务","depth":5}
+5e:{"value":"5. 发展能力","url":"#5-发展能力","depth":4}
+5f:{"value":"恶意软件","url":"#恶意软件","depth":5}
+60:{"value":"代码签名证书","url":"#代码签名证书","depth":5}
+61:{"value":"数字证书","url":"#数字证书-1","depth":5}
+62:{"value":"漏洞利用","url":"#漏洞利用","depth":5}
+63:{"value":"6.建立账户","url":"#6建立账户","depth":4}
+64:{"value":"社交媒体账户","url":"#社交媒体账户-1","depth":5}
+65:{"value":"电子邮件账户","url":"#电子邮件账户-1","depth":5}
+66:{"value":"云账户","url":"#云账户-1","depth":5}
+67:{"value":"7. 获取能力","url":"#7-获取能力","depth":4}
+68:{"value":"恶意软件","url":"#恶意软件-1","depth":5}
+69:{"value":"工具","url":"#工具","depth":5}
+6a:{"value":"代码签名证书","url":"#代码签名证书-1","depth":5}
+6b:{"value":"数字证书","url":"#数字证书-2","depth":5}
+6c:{"value":"漏洞利用","url":"#漏洞利用-1","depth":5}
+6d:{"value":"漏洞","url":"#漏洞","depth":5}
+6e:{"value":"人工智能","url":"#人工智能","depth":5}
+6f:{"value":"8.阶段功能","url":"#8阶段功能","depth":4}
+70:{"value":"上传恶意软件","url":"#上传恶意软件","depth":5}
+71:{"value":"上传工具","url":"#上传工具","depth":5}
+72:{"value":"安装数字证书","url":"#安装数字证书","depth":5}
+73:{"value":"无意中的目标","url":"#无意中的目标","depth":5}
+74:{"value":"链接目标","url":"#链接目标","depth":5}
+75:{"value":"SEO毒化","url":"#seo毒化","depth":5}
+76:{"value":"三、初始访问","url":"#三初始访问","depth":3}
+77:{"value":"1.内容注入","url":"#1内容注入","depth":4}
+78:{"value":"2.驾车路过妥协","url":"#2驾车路过妥协","depth":4}
+79:{"value":"3.开发面向公众的应用程序","url":"#3开发面向公众的应用程序","depth":4}
+7a:{"value":"4.外部远程服务","url":"#4外部远程服务","depth":4}
+7b:{"value":"5.硬件添加","url":"#5硬件添加","depth":4}
+7c:{"value":"6.网络钓鱼","url":"#6网络钓鱼","depth":4}
+7d:{"value":"网络钓鱼附件","url":"#网络钓鱼附件-1","depth":5}
+7e:{"value":"网络钓鱼链接","url":"#网络钓鱼链接-1","depth":5}
+7f:{"value":"通过服务进行网络钓鱼","url":"#通过服务进行网络钓鱼","depth":5}
+80:{"value":"网络钓鱼语音","url":"#网络钓鱼语音-1","depth":5}
+81:{"value":"7.通过可移动介质进行复制","url":"#7通过可移动介质进行复制","depth":4}
+82:{"value":"8.供应链妥协","url":"#8供应链妥协","depth":4}
+83:{"value":"折衷软件依赖关系和开发工具","url":"#折衷软件依赖关系和开发工具","depth":5}
+84:{"value":"损害软件供应链","url":"#损害软件供应链","depth":5}
+85:{"value":"损害硬件供应链","url":"#损害硬件供应链","depth":5}
+86:{"value":"9.受信任的关系","url":"#9受信任的关系","depth":4}
+87:{"value":"10.有效帐户","url":"#10有效帐户","depth":4}
+88:{"value":"默认帐户","url":"#默认帐户","depth":5}
+89:{"value":"域帐户","url":"#域帐户","depth":5}
+8a:{"value":"本地帐户","url":"#本地帐户","depth":5}
+8b:{"value":"云帐户","url":"#云帐户","depth":5}
+8c:{"value":"四、执行","url":"#四执行","depth":3}
+8d:{"value":"1.云管理命令","url":"#1云管理命令","depth":4}
+8e:{"value":"2.命令和脚本解释器","url":"#2命令和脚本解释器","depth":4}
+8f:{"value":"PowerShell","url":"#powershell","depth":5}
+90:{"value":"AppleScript","url":"#applescript","depth":5}
+91:{"value":"Windows命令行shell","url":"#windows命令行shell","depth":5}
+92:{"value":"Unixshell","url":"#unixshell","depth":5}
+93:{"value":"Visual Basic","url":"#visual-basic","depth":5}
+94:{"value":"Python","url":"#python","depth":5}
+95:{"value":"JavaScript","url":"#javascript","depth":5}
+96:{"value":"网络设备CLI","url":"#网络设备cli","depth":5}
+97:{"value":"云API","url":"#云api","depth":5}
+98:{"value":"AutoHotKey和AutoIT","url":"#autohotkey和autoit","depth":5}
+99:{"value":"3.容器管理命令","url":"#3容器管理命令","depth":4}
+9a:{"value":"4.部署容器","url":"#4部署容器","depth":4}
+9b:{"value":"5.利用客户端执行","url":"#5利用客户端执行","depth":4}
+9c:{"value":"6.进程间通信","url":"#6进程间通信","depth":4}
+9d:{"value":"组件对象模型","url":"#组件对象模型","depth":5}
+9e:{"value":"动态数据交换","url":"#动态数据交换","depth":5}
+9f:{"value":"XPC服务","url":"#xpc服务","depth":5}
+a0:{"value":"7.本机API","url":"#7本机api","depth":4}
+a1:{"value":"8.计划任务/作业","url":"#8计划任务作业","depth":4}
+a2:{"value":"At","url":"#at","depth":5}
+a3:{"value":"Cron","url":"#cron","depth":5}
+a4:{"value":"Launchd","url":"#launchd","depth":5}
+a5:{"value":"计划的任务","url":"#计划的任务","depth":5}
+a6:{"value":"系统计时器","url":"#系统计时器","depth":5}
+a7:{"value":"容器编排作业","url":"#容器编排作业","depth":5}
+a8:{"value":"9.无服务器执行","url":"#9无服务器执行","depth":4}
+a9:{"value":"10.共享模块","url":"#10共享模块","depth":4}
+aa:{"value":"11.软件部署工具","url":"#11软件部署工具","depth":4}
+ab:{"value":"12.系统服务","url":"#12系统服务","depth":4}
+ac:{"value":"Launchctl","url":"#launchctl","depth":5}
+ad:{"value":"服务执行","url":"#服务执行","depth":5}
+ae:{"value":"13.用户执行","url":"#13用户执行","depth":4}
+af:{"value":"恶意链接","url":"#恶意链接","depth":5}
+b0:{"value":"恶意文件","url":"#恶意文件","depth":5}
+b1:{"value":"恶意图片","url":"#恶意图片","depth":5}
+b2:{"value":"14.Windows Management Instrumentation","url":"#14windows-management-instrumentation","depth":4}
+b3:{"value":"五、持久化","url":"#五持久化","depth":3}
+b4:{"value":"1.账户操纵","url":"#1账户操纵","depth":4}
+b5:{"value":"其他云凭据","url":"#其他云凭据","depth":5}
+b6:{"value":"其他电子邮件委派权限","url":"#其他电子邮件委派权限","depth":5}
+b7:{"value":"其他云角色","url":"#其他云角色","depth":5}
+b8:{"value":"SSH授权密钥","url":"#ssh授权密钥","depth":5}
+b9:{"value":"设备注册","url":"#设备注册","depth":5}
+ba:{"value":"其他容器群集角色","url":"#其他容器群集角色","depth":5}
+bb:{"value":"2.BITS作业","url":"#2bits作业","depth":4}
+bc:{"value":"3.启动或登录自动启动执行","url":"#3启动或登录自动启动执行","depth":4}
+bd:{"value":"注册表运行密钥/启动文件夹","url":"#注册表运行密钥启动文件夹","depth":5}
+be:{"value":"身份验证包","url":"#身份验证包","depth":5}
+bf:{"value":"时间提供程序","url":"#时间提供程序","depth":5}
+c0:{"value":"Winlogon帮助程序DLL","url":"#winlogon帮助程序dll","depth":5}
+c1:{"value":"安全支持提供商","url":"#安全支持提供商","depth":5}
+c2:{"value":"内核模块和扩展","url":"#内核模块和扩展","depth":5}
+c3:{"value":"重新打开的应用程序","url":"#重新打开的应用程序","depth":5}
+c4:{"value":"LSASS驱动程序","url":"#lsass驱动程序","depth":5}
+c5:{"value":"快捷方式修改","url":"#快捷方式修改","depth":5}
+c6:{"value":"端口监视器","url":"#端口监视器","depth":5}
+c7:{"value":"打印处理器","url":"#打印处理器","depth":5}
+c8:{"value":"XDG自动启动条目","url":"#xdg自动启动条目","depth":5}
+c9:{"value":"活动设置","url":"#活动设置","depth":5}
+ca:{"value":"登录项","url":"#登录项","depth":5}
+cb:{"value":"4.启动或登录初始化脚本","url":"#4启动或登录初始化脚本","depth":4}
+cc:{"value":"登录脚本（Windows）","url":"#登录脚本windows","depth":5}
+cd:{"value":"登录挂钩","url":"#登录挂钩","depth":5}
+ce:{"value":"网络登录脚本","url":"#网络登录脚本","depth":5}
+cf:{"value":"RC脚本","url":"#rc脚本","depth":5}
+d0:{"value":"启动项目","url":"#启动项目","depth":5}
+d1:{"value":"5.扩充套件","url":"#5扩充套件","depth":4}
+d2:{"value":"6.折衷主机软件二进制","url":"#6折衷主机软件二进制","depth":4}
+d3:{"value":"7.创建帐户","url":"#7创建帐户","depth":4}
+d4:{"value":"本地帐户","url":"#本地帐户-1","depth":5}
+d5:{"value":"域帐户","url":"#域帐户-1","depth":5}
+d6:{"value":"云帐户","url":"#云帐户-1","depth":5}
+d7:{"value":"8.创建或修改系统流程","url":"#8创建或修改系统流程","depth":4}
+d8:{"value":"启动代理","url":"#启动代理","depth":5}
+d9:{"value":"系统化服务","url":"#系统化服务","depth":5}
+da:{"value":"Windows服务","url":"#windows服务","depth":5}
+db:{"value":"启动精灵","url":"#启动精灵","depth":5}
+dc:{"value":"集装箱服务","url":"#集装箱服务","depth":5}
+dd:{"value":"9.事件触发的执行","url":"#9事件触发的执行","depth":4}
+de:{"value":"更改默认文件关联","url":"#更改默认文件关联","depth":5}
+df:{"value":"屏幕保护程序","url":"#屏幕保护程序","depth":5}
+e0:{"value":"Windows Management Instrumentation事件订阅","url":"#windows-management-instrumentation事件订阅","depth":5}
+e1:{"value":"Unixshell配置修改","url":"#unixshell配置修改","depth":5}
+e2:{"value":"陷阱","url":"#陷阱","depth":5}
+e3:{"value":"LC_LOAD_DYLIB添加","url":"#lc_load_dylib添加","depth":5}
+e4:{"value":"Netsh帮助程序DLL","url":"#netsh帮助程序dll","depth":5}
+e5:{"value":"辅助功能","url":"#辅助功能","depth":5}
+e6:{"value":"AppCert DLL","url":"#appcert-dll","depth":5}
+e7:{"value":"AppInit DLL","url":"#appinit-dll","depth":5}
+e8:{"value":"应用程序填隙","url":"#应用程序填隙","depth":5}
+e9:{"value":"图像文件执行选项注入","url":"#图像文件执行选项注入","depth":5}
+ea:{"value":"PowerShell配置文件","url":"#powershell配置文件","depth":5}
+eb:{"value":"Emond","url":"#emond","depth":5}
+ec:{"value":"组件对象模型劫持","url":"#组件对象模型劫持","depth":5}
+ed:{"value":"安装程序包","url":"#安装程序包","depth":5}
+ee:{"value":"10.外部远程服务","url":"#10外部远程服务","depth":4}
+ef:{"value":"11.劫持执行流程","url":"#11劫持执行流程","depth":4}
+f0:{"value":"DLL搜索顺序劫持","url":"#dll搜索顺序劫持","depth":5}
+f1:{"value":"DLL侧面加载","url":"#dll侧面加载","depth":5}
+f2:{"value":"Dylib劫持","url":"#dylib劫持","depth":5}
+f3:{"value":"可执行安装程序文件权限弱点","url":"#可执行安装程序文件权限弱点","depth":5}
+f4:{"value":"动态链接劫持","url":"#动态链接劫持","depth":5}
+f5:{"value":"Path环境变量的路径拦截","url":"#path环境变量的路径拦截","depth":5}
+f6:{"value":"搜索顺序劫持的路径拦截","url":"#搜索顺序劫持的路径拦截","depth":5}
+f7:{"value":"未引用路径的路径拦截","url":"#未引用路径的路径拦截","depth":5}
+f8:{"value":"服务文件权限弱点","url":"#服务文件权限弱点","depth":5}
+f9:{"value":"服务注册表权限弱点","url":"#服务注册表权限弱点","depth":5}
+fa:{"value":"COR_PROFILER","url":"#cor_profiler","depth":5}
+fb:{"value":"内核回调表","url":"#内核回调表","depth":5}
+fc:{"value":"AppDomainManager","url":"#appdomainmanager","depth":5}
+fd:{"value":"12.植入物内部图像","url":"#12植入物内部图像","depth":4}
+fe:{"value":"13.修改身份验证过程","url":"#13修改身份验证过程","depth":4}
+ff:{"value":"域控制器身份验证","url":"#域控制器身份验证","depth":5}
+100:{"value":"密码筛选器DLL","url":"#密码筛选器dll","depth":5}
+101:{"value":"验证模块","url":"#验证模块","depth":5}
+102:{"value":"网络设备身份验证","url":"#网络设备身份验证","depth":5}
+103:{"value":"可逆加密","url":"#可逆加密","depth":5}
+104:{"value":"多因素身份验证","url":"#多因素身份验证","depth":5}
+105:{"value":"混合身份","url":"#混合身份","depth":5}
+106:{"value":"网络提供程序DLL","url":"#网络提供程序dll","depth":5}
+107:{"value":"条件访问策略","url":"#条件访问策略","depth":5}
+108:{"value":"14.Office应用程序启动","url":"#14office应用程序启动","depth":4}
+109:{"value":"Office模板宏","url":"#office模板宏","depth":5}
+10a:{"value":"Office测试","url":"#office测试","depth":5}
+10b:{"value":"Outlook窗体","url":"#outlook窗体","depth":5}
+10c:{"value":"Outlook主页","url":"#outlook主页","depth":5}
+10d:{"value":"Outlook规则","url":"#outlook规则","depth":5}
+10e:{"value":"加载项","url":"#加载项","depth":5}
+10f:{"value":"15.电源设置","url":"#15电源设置","depth":4}
+110:{"value":"16.操作系统前引导","url":"#16操作系统前引导","depth":4}
+111:{"value":"系统固件","url":"#系统固件","depth":5}
+112:{"value":"组件固件","url":"#组件固件","depth":5}
+113:{"value":"Bootkit","url":"#bootkit","depth":5}
+114:{"value":"ROMMONkit","url":"#rommonkit","depth":5}
+115:{"value":"TFTP引导","url":"#tftp引导","depth":5}
+116:{"value":"17.计划任务/作业","url":"#17计划任务作业","depth":4}
+117:{"value":"18.服务器软件组件","url":"#18服务器软件组件","depth":4}
+118:{"value":"SQL存储过程","url":"#sql存储过程","depth":5}
+119:{"value":"运输代理","url":"#运输代理","depth":5}
+11a:{"value":"Webshell","url":"#webshell","depth":5}
+11b:{"value":"IIS组件","url":"#iis组件","depth":5}
+11c:{"value":"终端服务DLL","url":"#终端服务dll","depth":5}
+11d:{"value":"19.交通信号","url":"#19交通信号","depth":4}
+11e:{"value":"端口敲击","url":"#端口敲击","depth":5}
+11f:{"value":"套接字筛选器","url":"#套接字筛选器","depth":5}
+120:{"value":"20.有效帐户","url":"#20有效帐户","depth":4}
+121:{"value":"默认帐户","url":"#默认帐户-1","depth":5}
+122:{"value":"域帐户","url":"#域帐户-2","depth":5}
+123:{"value":"本地帐户","url":"#本地帐户-2","depth":5}
+124:{"value":"云帐户","url":"#云帐户-2","depth":5}
+125:{"value":"六、特权升级","url":"#六特权升级","depth":3}
+126:{"value":"1.滥用高程控制机制","url":"#1滥用高程控制机制","depth":4}
+127:{"value":"Setuid和Setgid","url":"#setuid和setgid","depth":5}
+128:{"value":"绕过用户帐户控制","url":"#绕过用户帐户控制","depth":5}
+129:{"value":"Sudo和Sudo缓存","url":"#sudo和sudo缓存","depth":5}
+12a:{"value":"快速提升执行","url":"#快速提升执行","depth":5}
+12b:{"value":"临时高架云访问","url":"#临时高架云访问","depth":5}
+12c:{"value":"TCC操纵","url":"#tcc操纵","depth":5}
+12d:{"value":"2.访问令牌操作","url":"#2访问令牌操作","depth":4}
+12e:{"value":"代币假冒/盗窃","url":"#代币假冒盗窃","depth":5}
+12f:{"value":"使用令牌创建进程","url":"#使用令牌创建进程","depth":5}
+130:{"value":"制作和模拟代币","url":"#制作和模拟代币","depth":5}
+131:{"value":"父PID后台处理","url":"#父pid后台处理","depth":5}
+132:{"value":"SID历史注入","url":"#sid历史注入","depth":5}
+133:{"value":"3.账户操纵","url":"#3账户操纵","depth":4}
+134:{"value":"其他云凭据","url":"#其他云凭据-1","depth":5}
+135:{"value":"其他电子邮件委派权限","url":"#其他电子邮件委派权限-1","depth":5}
+136:{"value":"其他云角色","url":"#其他云角色-1","depth":5}
+137:{"value":"SSH授权密钥","url":"#ssh授权密钥-1","depth":5}
+138:{"value":"设备注册","url":"#设备注册-1","depth":5}
+139:{"value":"其他容器群集角色","url":"#其他容器群集角色-1","depth":5}
+13a:{"value":"4.启动或登录自动启动执行","url":"#4启动或登录自动启动执行","depth":4}
+13b:{"value":"注册表运行密钥/启动文件夹","url":"#注册表运行密钥启动文件夹-1","depth":5}
+13c:{"value":"身份验证包","url":"#身份验证包-1","depth":5}
+13d:{"value":"时间提供程序","url":"#时间提供程序-1","depth":5}
+13e:{"value":"Winlogon帮助程序DLL","url":"#winlogon帮助程序dll-1","depth":5}
+13f:{"value":"安全支持提供商","url":"#安全支持提供商-1","depth":5}
+140:{"value":"内核模块和扩展","url":"#内核模块和扩展-1","depth":5}
+141:{"value":"重新打开的应用程序","url":"#重新打开的应用程序-1","depth":5}
+142:{"value":"LSASS驱动程序","url":"#lsass驱动程序-1","depth":5}
+143:{"value":"快捷方式修改","url":"#快捷方式修改-1","depth":5}
+144:{"value":"端口监视器","url":"#端口监视器-1","depth":5}
+145:{"value":"打印处理器","url":"#打印处理器-1","depth":5}
+146:{"value":"XDG自动启动条目","url":"#xdg自动启动条目-1","depth":5}
+147:{"value":"活动设置","url":"#活动设置-1","depth":5}
+148:{"value":"登录项","url":"#登录项-1","depth":5}
+149:{"value":"5.启动或登录初始化脚本","url":"#5启动或登录初始化脚本","depth":4}
+14a:{"value":"登录脚本（Windows）","url":"#登录脚本windows-1","depth":5}
+14b:{"value":"登录挂钩","url":"#登录挂钩-1","depth":5}
+14c:{"value":"网络登录脚本","url":"#网络登录脚本-1","depth":5}
+14d:{"value":"RC脚本","url":"#rc脚本-1","depth":5}
+14e:{"value":"启动项目","url":"#启动项目-1","depth":5}
+14f:{"value":"6.创建或修改系统流程","url":"#6创建或修改系统流程","depth":4}
+150:{"value":"启动代理","url":"#启动代理-1","depth":5}
+151:{"value":"系统化服务","url":"#系统化服务-1","depth":5}
+152:{"value":"Windows服务","url":"#windows服务-1","depth":5}
+153:{"value":"启动精灵","url":"#启动精灵-1","depth":5}
+154:{"value":"集装箱服务","url":"#集装箱服务-1","depth":5}
+155:{"value":"7.域或租户策略修改","url":"#7域或租户策略修改","depth":4}
+156:{"value":"组策略修改","url":"#组策略修改","depth":5}
+157:{"value":"信任修改","url":"#信任修改","depth":5}
+158:{"value":"8.逃到主机","url":"#8逃到主机","depth":4}
+159:{"value":"9.事件触发的执行","url":"#9事件触发的执行-1","depth":4}
+15a:{"value":"更改默认文件关联","url":"#更改默认文件关联-1","depth":5}
+15b:{"value":"屏幕保护程序","url":"#屏幕保护程序-1","depth":5}
+15c:{"value":"Windows Management Instrumentation事件订阅","url":"#windows-management-instrumentation事件订阅-1","depth":5}
+15d:{"value":"Unix外壳配置修改","url":"#unix外壳配置修改","depth":5}
+15e:{"value":"陷阱","url":"#陷阱-1","depth":5}
+15f:{"value":"LC_LOAD_DYLIB添加","url":"#lc_load_dylib添加-1","depth":5}
+160:{"value":"Netsh帮助程序DLL","url":"#netsh帮助程序dll-1","depth":5}
+161:{"value":"辅助功能","url":"#辅助功能-1","depth":5}
+162:{"value":"AppCert DLL","url":"#appcert-dll-1","depth":5}
+163:{"value":"AppInit DLL","url":"#appinit-dll-1","depth":5}
+164:{"value":"应用程序填隙","url":"#应用程序填隙-1","depth":5}
+165:{"value":"图像文件执行选项注入","url":"#图像文件执行选项注入-1","depth":5}
+166:{"value":"PowerShell配置文件","url":"#powershell配置文件-1","depth":5}
+167:{"value":"Emond","url":"#emond-1","depth":5}
+168:{"value":"组件对象模型劫持","url":"#组件对象模型劫持-1","depth":5}
+169:{"value":"安装程序包","url":"#安装程序包-1","depth":5}
+16a:{"value":"10.利用特权升级","url":"#10利用特权升级","depth":4}
+16b:{"value":"11.劫持执行流程","url":"#11劫持执行流程-1","depth":4}
+16c:{"value":"DLL搜索顺序劫持","url":"#dll搜索顺序劫持-1","depth":5}
+16d:{"value":"DLL侧面加载","url":"#dll侧面加载-1","depth":5}
+16e:{"value":"Dylib劫持","url":"#dylib劫持-1","depth":5}
+16f:{"value":"可执行安装程序文件权限弱点","url":"#可执行安装程序文件权限弱点-1","depth":5}
+170:{"value":"动态链接劫持","url":"#动态链接劫持-1","depth":5}
+171:{"value":"Path环境变量的路径拦截","url":"#path环境变量的路径拦截-1","depth":5}
+172:{"value":"搜索顺序劫持的路径拦截","url":"#搜索顺序劫持的路径拦截-1","depth":5}
+173:{"value":"未引用路径的路径拦截","url":"#未引用路径的路径拦截-1","depth":5}
+174:{"value":"服务文件权限弱点","url":"#服务文件权限弱点-1","depth":5}
+175:{"value":"服务注册表权限弱点","url":"#服务注册表权限弱点-1","depth":5}
+176:{"value":"COR_PROFILER","url":"#cor_profiler-1","depth":5}
+177:{"value":"内核回调表","url":"#内核回调表-1","depth":5}
+178:{"value":"AppDomainManager","url":"#appdomainmanager-1","depth":5}
+179:{"value":"12.过程注入","url":"#12过程注入","depth":4}
+17a:{"value":"动态链接库注入","url":"#动态链接库注入","depth":5}
+17b:{"value":"便携式可执行程序注入","url":"#便携式可执行程序注入","depth":5}
+17c:{"value":"线程执行劫持","url":"#线程执行劫持","depth":5}
+17d:{"value":"异步过程调用","url":"#异步过程调用","depth":5}
+17e:{"value":"线程本地存储","url":"#线程本地存储","depth":5}
+17f:{"value":"Ptrace系统调用","url":"#ptrace系统调用","depth":5}
+180:{"value":"过程内存","url":"#过程内存","depth":5}
+181:{"value":"额外窗口内存注入","url":"#额外窗口内存注入","depth":5}
+182:{"value":"工艺空心化","url":"#工艺空心化","depth":5}
+183:{"value":"处理Doppelgänging","url":"#处理doppelgänging","depth":5}
+184:{"value":"VDSO劫持","url":"#vdso劫持","depth":5}
+185:{"value":"ListPlanting","url":"#listplanting","depth":5}
+186:{"value":"13.计划任务/作业","url":"#13计划任务作业","depth":4}
+187:{"value":"14.有效账户","url":"#14有效账户","depth":4}
+188:{"value":"总结","url":"#总结","depth":2}
+16:["$17","$18","$19","$1a","$1b","$1c","$1d","$1e","$1f","$20","$21","$22","$23","$24","$25","$26","$27","$28","$29","$2a","$2b","$2c","$2d","$2e","$2f","$30","$31","$32","$33","$34","$35","$36","$37","$38","$39","$3a","$3b","$3c","$3d","$3e","$3f","$40","$41","$42","$43","$44","$45","$46","$47","$48","$49","$4a","$4b","$4c","$4d","$4e","$4f","$50","$51","$52","$53","$54","$55","$56","$57","$58","$59","$5a","$5b","$5c","$5d","$5e","$5f","$60","$61","$62","$63","$64","$65","$66","$67","$68","$69","$6a","$6b","$6c","$6d","$6e","$6f","$70","$71","$72","$73","$74","$75","$76","$77","$78","$79","$7a","$7b","$7c","$7d","$7e","$7f","$80","$81","$82","$83","$84","$85","$86","$87","$88","$89","$8a","$8b","$8c","$8d","$8e","$8f","$90","$91","$92","$93","$94","$95","$96","$97","$98","$99","$9a","$9b","$9c","$9d","$9e","$9f","$a0","$a1","$a2","$a3","$a4","$a5","$a6","$a7","$a8","$a9","$aa","$ab","$ac","$ad","$ae","$af","$b0","$b1","$b2","$b3","$b4","$b5","$b6","$b7","$b8","$b9","$ba","$bb","$bc","$bd","$be","$bf","$c0","$c1","$c2","$c3","$c4","$c5","$c6","$c7","$c8","$c9","$ca","$cb","$cc","$cd","$ce","$cf","$d0","$d1","$d2","$d3","$d4","$d5","$d6","$d7","$d8","$d9","$da","$db","$dc","$dd","$de","$df","$e0","$e1","$e2","$e3","$e4","$e5","$e6","$e7","$e8","$e9","$ea","$eb","$ec","$ed","$ee","$ef","$f0","$f1","$f2","$f3","$f4","$f5","$f6","$f7","$f8","$f9","$fa","$fb","$fc","$fd","$fe","$ff","$100","$101","$102","$103","$104","$105","$106","$107","$108","$109","$10a","$10b","$10c","$10d","$10e","$10f","$110","$111","$112","$113","$114","$115","$116","$117","$118","$119","$11a","$11b","$11c","$11d","$11e","$11f","$120","$121","$122","$123","$124","$125","$126","$127","$128","$129","$12a","$12b","$12c","$12d","$12e","$12f","$130","$131","$132","$133","$134","$135","$136","$137","$138","$139","$13a","$13b","$13c","$13d","$13e","$13f","$140","$141","$142","$143","$144","$145","$146","$147","$148","$149","$14a","$14b","$14c","$14d","$14e","$14f","$150","$151","$152","$153","$154","$155","$156","$157","$158","$159","$15a","$15b","$15c","$15d","$15e","$15f","$160","$161","$162","$163","$164","$165","$166","$167","$168","$169","$16a","$16b","$16c","$16d","$16e","$16f","$170","$171","$172","$173","$174","$175","$176","$177","$178","$179","$17a","$17b","$17c","$17d","$17e","$17f","$180","$181","$182","$183","$184","$185","$186","$187","$188"]
+18b:{"@type":"Person","name":"mainJayLai"}
+18a:["$18b"]
+189:{"@context":"https://schema.org","@type":"BlogPosting","headline":"ATT&CK学习笔记","datePublished":"2024-06-24T00:00:00.000Z","dateModified":"2024-06-24T00:00:00.000Z","description":"ATT&CK的学习笔记","image":"/static/images/twitter-card.png","url":"https://mainjaylai.github.io/Blog/blog/paper/ATTCK","author":"$18a"}
+13:{"title":"ATT&CK学习笔记","date":"2024-06-24T00:00:00.000Z","tags":"$14","draft":false,"summary":"ATT&CK的学习笔记","layout":"PostSimple","type":"Blog","readingTime":"$15","slug":"paper/ATTCK","path":"blog/paper/ATTCK","filePath":"blog/paper/ATTCK.mdx","toc":"$16","structuredData":"$189"}
+18d:["paper reading","machine learing"]
+18e:["/static/images/paper/trajectory-dataset/picture1.png","/static/images/paper/trajectory-dataset/picture2.png","/static/images/paper/trajectory-dataset/picture3.png","/static/images/paper/trajectory-dataset/picture4.png"]
+18f:{"text":"49 min read","minutes":48.925,"time":2935500,"words":9785}
+191:{"value":"目录","url":"#目录","depth":2}
+192:{"value":"摘要","url":"#摘要","depth":2}
+193:{"value":"1 介绍","url":"#1-介绍","depth":2}
+194:{"value":"2 准备工作","url":"#2-准备工作","depth":2}
+195:{"value":"3 问题表述","url":"#3-问题表述","depth":2}
+196:{"value":"3.1 正偏差方差","url":"#31-正偏差方差","depth":3}
+197:{"value":"3.2 离线RL未能有效利用高RPSV数据","url":"#32-离线rl未能有效利用高rpsv数据","depth":3}
+198:{"value":"4 方法","url":"#4-方法","depth":2}
+199:{"value":"4.1 分析","url":"#41-分析","depth":3}
+19a:{"value":"4.2 回报加权","url":"#42-回报加权","depth":3}
+19b:{"value":"4.3 优势加权","url":"#43-优势加权","depth":3}
+19c:{"value":"5. 实验","url":"#5-实验","depth":2}
+19d:{"value":"5.1 实验搭建","url":"#51-实验搭建","depth":3}
+19e:{"value":"5.2 稀疏高回报数据集中的离线强化学习改进","url":"#52-稀疏高回报数据集中的离线强化学习改进","depth":3}
+19f:{"value":"5.3 混合数据集中的性能提升分析","url":"#53-混合数据集中的性能提升分析","depth":3}
+1a0:{"value":"5.4 高回报轨迹更多的常规数据集结果","url":"#54-高回报轨迹更多的常规数据集结果","depth":3}
+1a1:{"value":"5.5 随机 MDP 中的结果","url":"#55-随机-mdp-中的结果","depth":3}
+1a2:{"value":"6 相关工作","url":"#6-相关工作","depth":2}
+1a3:{"value":"7 讨论","url":"#7-讨论","depth":2}
+1a4:{"value":"总结和经验","url":"#总结和经验","depth":2}
+1a5:{"value":"1. 研究背景","url":"#1-研究背景","depth":3}
+1a6:{"value":"2. 方法和策略","url":"#2-方法和策略","depth":3}
+1a7:{"value":"3. 实验设计","url":"#3-实验设计","depth":3}
+1a8:{"value":"4. 实验结果","url":"#4-实验结果","depth":3}
+1a9:{"value":"5. 分析和讨论","url":"#5-分析和讨论","depth":3}
+1aa:{"value":"6. 相关工作","url":"#6-相关工作-1","depth":3}
+1ab:{"value":"7. 实践意义","url":"#7-实践意义","depth":3}
+1ac:{"value":"8. 经验总结","url":"#8-经验总结","depth":3}
+1ad:{"value":"参考文献","url":"#参考文献","depth":2}
+190:["$191","$192","$193","$194","$195","$196","$197","$198","$199","$19a","$19b","$19c","$19d","$19e","$19f","$1a0","$1a1","$1a2","$1a3","$1a4","$1a5","$1a6","$1a7","$1a8","$1a9","$1aa","$1ab","$1ac","$1ad"]
+1b0:{"@type":"Person","name":"mainJayLai"}
+1af:["$1b0"]
+1ae:{"@context":"https://schema.org","@type":"BlogPosting","headline":"基于轨迹加权的混合离线强化学习数据集","datePublished":"2024-06-23T00:00:00.000Z","dateModified":"2024-06-23T00:00:00.000Z","description":"本文提出了一种基于轨迹加权的混合离线强化学习数据集，用于评估混合离线强化学习算法的性能。","image":"/static/images/paper/trajectory-dataset/picture1.png","url":"https://mainjaylai.github.io/Blog/blog/paper/trajectory-dataset","author":"$1af"}
+18c:{"title":"基于轨迹加权的混合离线强化学习数据集","date":"2024-06-23T00:00:00.000Z","tags":"$18d","draft":false,"summary":"本文提出了一种基于轨迹加权的混合离线强化学习数据集，用于评估混合离线强化学习算法的性能。","images":"$18e","layout":"PostSimple","bibliography":"references-data.bib","type":"Blog","readingTime":"$18f","slug":"paper/trajectory-dataset","path":"blog/paper/trajectory-dataset","filePath":"blog/paper/trajectory-dataset.mdx","toc":"$190","structuredData":"$1ae"}
+0:["RuHFhFH_7vHmE7Av0-0RN",[[["",{"children":["blog",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",{"children":["blog",{"children":["__PAGE__",{},[["$L1",["$","$L2",null,{"posts":[{"title":"数据库锁之间有哪些区别？","date":"2024-07-01T00:00:00.000Z","tags":["databse"],"draft":false,"summary":"数据库锁（Database Locks）是确保数据一致性和完整性的重要机制，防止多个事务同时访问同一数据资源导致数据冲突。不同类型的锁有不同的特性和用途。","layout":"PostSimple","type":"Blog","readingTime":{"text":"8 min read","minutes":7.155,"time":429300,"words":1431},"slug":"database/lock","path":"blog/database/lock","filePath":"blog/database/lock.mdx","toc":[{"value":"1. 共享锁（Shared Lock，S Lock）","url":"#1-共享锁shared-locks-lock","depth":3},{"value":"2. 排他锁（Exclusive Lock，X Lock）","url":"#2-排他锁exclusive-lockx-lock","depth":3},{"value":"3. 更新锁（Update Lock，U Lock）","url":"#3-更新锁update-locku-lock","depth":3},{"value":"4. 模式锁（Schema Lock）","url":"#4-模式锁schema-lock","depth":3},{"value":"5. 批量更新锁（Bulk Update Lock，BU Lock）","url":"#5-批量更新锁bulk-update-lockbu-lock","depth":3},{"value":"6. 键范围锁（Key-Range Lock）","url":"#6-键范围锁key-range-lock","depth":3},{"value":"7. 行级锁（Row-Level Lock）","url":"#7-行级锁row-level-lock","depth":3},{"value":"8. 页级锁（Page-Level Lock）","url":"#8-页级锁page-level-lock","depth":3},{"value":"9. 表级锁（Table-Level Lock）","url":"#9-表级锁table-level-lock","depth":3}],"structuredData":{"@context":"https://schema.org","@type":"BlogPosting","headline":"数据库锁之间有哪些区别？","datePublished":"2024-07-01T00:00:00.000Z","dateModified":"2024-07-01T00:00:00.000Z","description":"数据库锁（Database Locks）是确保数据一致性和完整性的重要机制，防止多个事务同时访问同一数据资源导致数据冲突。不同类型的锁有不同的特性和用途。","image":"/static/images/twitter-card.png","url":"https://mainjaylai.github.io/Blog/blog/database/lock","author":[{"@type":"Person","name":"mainJayLai"}]}},{"title":"ATT&CK学习笔记","date":"2024-06-24T00:00:00.000Z","tags":["paper reading","network security"],"draft":false,"summary":"ATT&CK的学习笔记","layout":"PostSimple","type":"Blog","readingTime":{"text":"973 min read","minutes":972.625,"time":58357500,"words":194525},"slug":"paper/ATTCK","path":"blog/paper/ATTCK","filePath":"blog/paper/ATTCK.mdx","toc":[{"value":"目录","url":"#目录-1","depth":2},{"value":"前言知识","url":"#前言知识","depth":2},{"value":"定义","url":"#定义","depth":2},{"value":"战术详解","url":"#战术详解","depth":2},{"value":"一、 侦察","url":"#一-侦察","depth":3},{"value":"1. 主动扫描","url":"#1-主动扫描","depth":4},{"value":"IP扫描","url":"#ip扫描","depth":5},{"value":"漏洞扫描","url":"#漏洞扫描","depth":5},{"value":"字表扫描","url":"#字表扫描","depth":5},{"value":"2.收集受害者宿主信息","url":"#2收集受害者宿主信息","depth":4},{"value":"硬件","url":"#硬件","depth":5},{"value":"软件","url":"#软件","depth":5},{"value":"固件","url":"#固件","depth":5},{"value":"客户端配置","url":"#客户端配置","depth":5},{"value":"3.收集受害者身份信息","url":"#3收集受害者身份信息","depth":4},{"value":"资格证书","url":"#资格证书","depth":5},{"value":"电子邮件地址","url":"#电子邮件地址","depth":5},{"value":"员工姓名","url":"#员工姓名","depth":5},{"value":"4.收集受害者网络信息","url":"#4收集受害者网络信息","depth":4},{"value":"域属性","url":"#域属性","depth":5},{"value":"域名服务器","url":"#域名服务器","depth":5},{"value":"网络信任依赖项","url":"#网络信任依赖项","depth":5},{"value":"网络拓扑","url":"#网络拓扑","depth":5},{"value":"IP地址","url":"#ip地址","depth":5},{"value":"网络安全设备","url":"#网络安全设备","depth":5},{"value":"5.收集受害者组织信息","url":"#5收集受害者组织信息","depth":4},{"value":"确定物理位置","url":"#确定物理位置","depth":5},{"value":"业务关系","url":"#业务关系","depth":5},{"value":"识别业务时间","url":"#识别业务时间","depth":5},{"value":"确定角色","url":"#确定角色","depth":5},{"value":"6.信息网络钓鱼","url":"#6信息网络钓鱼","depth":4},{"value":"网络钓鱼服务","url":"#网络钓鱼服务","depth":5},{"value":"网络钓鱼附件","url":"#网络钓鱼附件","depth":5},{"value":"网络钓鱼链接","url":"#网络钓鱼链接","depth":5},{"value":"网络钓鱼语音","url":"#网络钓鱼语音","depth":5},{"value":"7.搜索关闭的源","url":"#7搜索关闭的源","depth":4},{"value":"威胁英特尔供应商","url":"#威胁英特尔供应商","depth":5},{"value":"采购技术数据","url":"#采购技术数据","depth":5},{"value":"8.搜索开放的技术数据库","url":"#8搜索开放的技术数据库","depth":4},{"value":"DNS/被动DNS","url":"#dns被动dns","depth":5},{"value":"WHOIS","url":"#whois","depth":5},{"value":"数字证书","url":"#数字证书","depth":5},{"value":"CDN","url":"#cdn","depth":5},{"value":"扫描数据库","url":"#扫描数据库","depth":5},{"value":"9.搜索打开的网站/域","url":"#9搜索打开的网站域","depth":4},{"value":"社会化媒体","url":"#社会化媒体","depth":5},{"value":"搜索引擎","url":"#搜索引擎","depth":5},{"value":"代码存储库","url":"#代码存储库","depth":5},{"value":"10.搜索受害者拥有的网站","url":"#10搜索受害者拥有的网站","depth":4},{"value":"二、资源开发","url":"#二资源开发","depth":3},{"value":"1.获取访问权限","url":"#1获取访问权限","depth":4},{"value":"2.收购基础设施","url":"#2收购基础设施","depth":4},{"value":"域","url":"#域","depth":5},{"value":"DNS服务器","url":"#dns服务器","depth":5},{"value":"虚拟专用服务器","url":"#虚拟专用服务器","depth":5},{"value":"服务器","url":"#服务器","depth":5},{"value":"Botnet","url":"#botnet","depth":5},{"value":"Web服务","url":"#web服务","depth":5},{"value":"无服务器","url":"#无服务器","depth":5},{"value":"恶意广告","url":"#恶意广告","depth":5},{"value":"3.入侵账户","url":"#3入侵账户","depth":4},{"value":"社交媒体账户","url":"#社交媒体账户","depth":5},{"value":"电子邮件账户","url":"#电子邮件账户","depth":5},{"value":"云账户","url":"#云账户","depth":5},{"value":"4.入侵基础设施","url":"#4入侵基础设施","depth":4},{"value":"域名","url":"#域名","depth":5},{"value":"DNS服务器","url":"#dns服务器-1","depth":5},{"value":"虚拟专用服务器（VPS）","url":"#虚拟专用服务器vps","depth":5},{"value":"服务器","url":"#服务器-1","depth":5},{"value":"僵尸网络","url":"#僵尸网络","depth":5},{"value":"网络服务","url":"#网络服务","depth":5},{"value":"5. 发展能力","url":"#5-发展能力","depth":4},{"value":"恶意软件","url":"#恶意软件","depth":5},{"value":"代码签名证书","url":"#代码签名证书","depth":5},{"value":"数字证书","url":"#数字证书-1","depth":5},{"value":"漏洞利用","url":"#漏洞利用","depth":5},{"value":"6.建立账户","url":"#6建立账户","depth":4},{"value":"社交媒体账户","url":"#社交媒体账户-1","depth":5},{"value":"电子邮件账户","url":"#电子邮件账户-1","depth":5},{"value":"云账户","url":"#云账户-1","depth":5},{"value":"7. 获取能力","url":"#7-获取能力","depth":4},{"value":"恶意软件","url":"#恶意软件-1","depth":5},{"value":"工具","url":"#工具","depth":5},{"value":"代码签名证书","url":"#代码签名证书-1","depth":5},{"value":"数字证书","url":"#数字证书-2","depth":5},{"value":"漏洞利用","url":"#漏洞利用-1","depth":5},{"value":"漏洞","url":"#漏洞","depth":5},{"value":"人工智能","url":"#人工智能","depth":5},{"value":"8.阶段功能","url":"#8阶段功能","depth":4},{"value":"上传恶意软件","url":"#上传恶意软件","depth":5},{"value":"上传工具","url":"#上传工具","depth":5},{"value":"安装数字证书","url":"#安装数字证书","depth":5},{"value":"无意中的目标","url":"#无意中的目标","depth":5},{"value":"链接目标","url":"#链接目标","depth":5},{"value":"SEO毒化","url":"#seo毒化","depth":5},{"value":"三、初始访问","url":"#三初始访问","depth":3},{"value":"1.内容注入","url":"#1内容注入","depth":4},{"value":"2.驾车路过妥协","url":"#2驾车路过妥协","depth":4},{"value":"3.开发面向公众的应用程序","url":"#3开发面向公众的应用程序","depth":4},{"value":"4.外部远程服务","url":"#4外部远程服务","depth":4},{"value":"5.硬件添加","url":"#5硬件添加","depth":4},{"value":"6.网络钓鱼","url":"#6网络钓鱼","depth":4},{"value":"网络钓鱼附件","url":"#网络钓鱼附件-1","depth":5},{"value":"网络钓鱼链接","url":"#网络钓鱼链接-1","depth":5},{"value":"通过服务进行网络钓鱼","url":"#通过服务进行网络钓鱼","depth":5},{"value":"网络钓鱼语音","url":"#网络钓鱼语音-1","depth":5},{"value":"7.通过可移动介质进行复制","url":"#7通过可移动介质进行复制","depth":4},{"value":"8.供应链妥协","url":"#8供应链妥协","depth":4},{"value":"折衷软件依赖关系和开发工具","url":"#折衷软件依赖关系和开发工具","depth":5},{"value":"损害软件供应链","url":"#损害软件供应链","depth":5},{"value":"损害硬件供应链","url":"#损害硬件供应链","depth":5},{"value":"9.受信任的关系","url":"#9受信任的关系","depth":4},{"value":"10.有效帐户","url":"#10有效帐户","depth":4},{"value":"默认帐户","url":"#默认帐户","depth":5},{"value":"域帐户","url":"#域帐户","depth":5},{"value":"本地帐户","url":"#本地帐户","depth":5},{"value":"云帐户","url":"#云帐户","depth":5},{"value":"四、执行","url":"#四执行","depth":3},{"value":"1.云管理命令","url":"#1云管理命令","depth":4},{"value":"2.命令和脚本解释器","url":"#2命令和脚本解释器","depth":4},{"value":"PowerShell","url":"#powershell","depth":5},{"value":"AppleScript","url":"#applescript","depth":5},{"value":"Windows命令行shell","url":"#windows命令行shell","depth":5},{"value":"Unixshell","url":"#unixshell","depth":5},{"value":"Visual Basic","url":"#visual-basic","depth":5},{"value":"Python","url":"#python","depth":5},{"value":"JavaScript","url":"#javascript","depth":5},{"value":"网络设备CLI","url":"#网络设备cli","depth":5},{"value":"云API","url":"#云api","depth":5},{"value":"AutoHotKey和AutoIT","url":"#autohotkey和autoit","depth":5},{"value":"3.容器管理命令","url":"#3容器管理命令","depth":4},{"value":"4.部署容器","url":"#4部署容器","depth":4},{"value":"5.利用客户端执行","url":"#5利用客户端执行","depth":4},{"value":"6.进程间通信","url":"#6进程间通信","depth":4},{"value":"组件对象模型","url":"#组件对象模型","depth":5},{"value":"动态数据交换","url":"#动态数据交换","depth":5},{"value":"XPC服务","url":"#xpc服务","depth":5},{"value":"7.本机API","url":"#7本机api","depth":4},{"value":"8.计划任务/作业","url":"#8计划任务作业","depth":4},{"value":"At","url":"#at","depth":5},{"value":"Cron","url":"#cron","depth":5},{"value":"Launchd","url":"#launchd","depth":5},{"value":"计划的任务","url":"#计划的任务","depth":5},{"value":"系统计时器","url":"#系统计时器","depth":5},{"value":"容器编排作业","url":"#容器编排作业","depth":5},{"value":"9.无服务器执行","url":"#9无服务器执行","depth":4},{"value":"10.共享模块","url":"#10共享模块","depth":4},{"value":"11.软件部署工具","url":"#11软件部署工具","depth":4},{"value":"12.系统服务","url":"#12系统服务","depth":4},{"value":"Launchctl","url":"#launchctl","depth":5},{"value":"服务执行","url":"#服务执行","depth":5},{"value":"13.用户执行","url":"#13用户执行","depth":4},{"value":"恶意链接","url":"#恶意链接","depth":5},{"value":"恶意文件","url":"#恶意文件","depth":5},{"value":"恶意图片","url":"#恶意图片","depth":5},{"value":"14.Windows Management Instrumentation","url":"#14windows-management-instrumentation","depth":4},{"value":"五、持久化","url":"#五持久化","depth":3},{"value":"1.账户操纵","url":"#1账户操纵","depth":4},{"value":"其他云凭据","url":"#其他云凭据","depth":5},{"value":"其他电子邮件委派权限","url":"#其他电子邮件委派权限","depth":5},{"value":"其他云角色","url":"#其他云角色","depth":5},{"value":"SSH授权密钥","url":"#ssh授权密钥","depth":5},{"value":"设备注册","url":"#设备注册","depth":5},{"value":"其他容器群集角色","url":"#其他容器群集角色","depth":5},{"value":"2.BITS作业","url":"#2bits作业","depth":4},{"value":"3.启动或登录自动启动执行","url":"#3启动或登录自动启动执行","depth":4},{"value":"注册表运行密钥/启动文件夹","url":"#注册表运行密钥启动文件夹","depth":5},{"value":"身份验证包","url":"#身份验证包","depth":5},{"value":"时间提供程序","url":"#时间提供程序","depth":5},{"value":"Winlogon帮助程序DLL","url":"#winlogon帮助程序dll","depth":5},{"value":"安全支持提供商","url":"#安全支持提供商","depth":5},{"value":"内核模块和扩展","url":"#内核模块和扩展","depth":5},{"value":"重新打开的应用程序","url":"#重新打开的应用程序","depth":5},{"value":"LSASS驱动程序","url":"#lsass驱动程序","depth":5},{"value":"快捷方式修改","url":"#快捷方式修改","depth":5},{"value":"端口监视器","url":"#端口监视器","depth":5},{"value":"打印处理器","url":"#打印处理器","depth":5},{"value":"XDG自动启动条目","url":"#xdg自动启动条目","depth":5},{"value":"活动设置","url":"#活动设置","depth":5},{"value":"登录项","url":"#登录项","depth":5},{"value":"4.启动或登录初始化脚本","url":"#4启动或登录初始化脚本","depth":4},{"value":"登录脚本（Windows）","url":"#登录脚本windows","depth":5},{"value":"登录挂钩","url":"#登录挂钩","depth":5},{"value":"网络登录脚本","url":"#网络登录脚本","depth":5},{"value":"RC脚本","url":"#rc脚本","depth":5},{"value":"启动项目","url":"#启动项目","depth":5},{"value":"5.扩充套件","url":"#5扩充套件","depth":4},{"value":"6.折衷主机软件二进制","url":"#6折衷主机软件二进制","depth":4},{"value":"7.创建帐户","url":"#7创建帐户","depth":4},{"value":"本地帐户","url":"#本地帐户-1","depth":5},{"value":"域帐户","url":"#域帐户-1","depth":5},{"value":"云帐户","url":"#云帐户-1","depth":5},{"value":"8.创建或修改系统流程","url":"#8创建或修改系统流程","depth":4},{"value":"启动代理","url":"#启动代理","depth":5},{"value":"系统化服务","url":"#系统化服务","depth":5},{"value":"Windows服务","url":"#windows服务","depth":5},{"value":"启动精灵","url":"#启动精灵","depth":5},{"value":"集装箱服务","url":"#集装箱服务","depth":5},{"value":"9.事件触发的执行","url":"#9事件触发的执行","depth":4},{"value":"更改默认文件关联","url":"#更改默认文件关联","depth":5},{"value":"屏幕保护程序","url":"#屏幕保护程序","depth":5},{"value":"Windows Management Instrumentation事件订阅","url":"#windows-management-instrumentation事件订阅","depth":5},{"value":"Unixshell配置修改","url":"#unixshell配置修改","depth":5},{"value":"陷阱","url":"#陷阱","depth":5},{"value":"LC_LOAD_DYLIB添加","url":"#lc_load_dylib添加","depth":5},{"value":"Netsh帮助程序DLL","url":"#netsh帮助程序dll","depth":5},{"value":"辅助功能","url":"#辅助功能","depth":5},{"value":"AppCert DLL","url":"#appcert-dll","depth":5},{"value":"AppInit DLL","url":"#appinit-dll","depth":5},{"value":"应用程序填隙","url":"#应用程序填隙","depth":5},{"value":"图像文件执行选项注入","url":"#图像文件执行选项注入","depth":5},{"value":"PowerShell配置文件","url":"#powershell配置文件","depth":5},{"value":"Emond","url":"#emond","depth":5},{"value":"组件对象模型劫持","url":"#组件对象模型劫持","depth":5},{"value":"安装程序包","url":"#安装程序包","depth":5},{"value":"10.外部远程服务","url":"#10外部远程服务","depth":4},{"value":"11.劫持执行流程","url":"#11劫持执行流程","depth":4},{"value":"DLL搜索顺序劫持","url":"#dll搜索顺序劫持","depth":5},{"value":"DLL侧面加载","url":"#dll侧面加载","depth":5},{"value":"Dylib劫持","url":"#dylib劫持","depth":5},{"value":"可执行安装程序文件权限弱点","url":"#可执行安装程序文件权限弱点","depth":5},{"value":"动态链接劫持","url":"#动态链接劫持","depth":5},{"value":"Path环境变量的路径拦截","url":"#path环境变量的路径拦截","depth":5},{"value":"搜索顺序劫持的路径拦截","url":"#搜索顺序劫持的路径拦截","depth":5},{"value":"未引用路径的路径拦截","url":"#未引用路径的路径拦截","depth":5},{"value":"服务文件权限弱点","url":"#服务文件权限弱点","depth":5},{"value":"服务注册表权限弱点","url":"#服务注册表权限弱点","depth":5},{"value":"COR_PROFILER","url":"#cor_profiler","depth":5},{"value":"内核回调表","url":"#内核回调表","depth":5},{"value":"AppDomainManager","url":"#appdomainmanager","depth":5},{"value":"12.植入物内部图像","url":"#12植入物内部图像","depth":4},{"value":"13.修改身份验证过程","url":"#13修改身份验证过程","depth":4},{"value":"域控制器身份验证","url":"#域控制器身份验证","depth":5},{"value":"密码筛选器DLL","url":"#密码筛选器dll","depth":5},{"value":"验证模块","url":"#验证模块","depth":5},{"value":"网络设备身份验证","url":"#网络设备身份验证","depth":5},{"value":"可逆加密","url":"#可逆加密","depth":5},{"value":"多因素身份验证","url":"#多因素身份验证","depth":5},{"value":"混合身份","url":"#混合身份","depth":5},{"value":"网络提供程序DLL","url":"#网络提供程序dll","depth":5},{"value":"条件访问策略","url":"#条件访问策略","depth":5},{"value":"14.Office应用程序启动","url":"#14office应用程序启动","depth":4},{"value":"Office模板宏","url":"#office模板宏","depth":5},{"value":"Office测试","url":"#office测试","depth":5},{"value":"Outlook窗体","url":"#outlook窗体","depth":5},{"value":"Outlook主页","url":"#outlook主页","depth":5},{"value":"Outlook规则","url":"#outlook规则","depth":5},{"value":"加载项","url":"#加载项","depth":5},{"value":"15.电源设置","url":"#15电源设置","depth":4},{"value":"16.操作系统前引导","url":"#16操作系统前引导","depth":4},{"value":"系统固件","url":"#系统固件","depth":5},{"value":"组件固件","url":"#组件固件","depth":5},{"value":"Bootkit","url":"#bootkit","depth":5},{"value":"ROMMONkit","url":"#rommonkit","depth":5},{"value":"TFTP引导","url":"#tftp引导","depth":5},{"value":"17.计划任务/作业","url":"#17计划任务作业","depth":4},{"value":"18.服务器软件组件","url":"#18服务器软件组件","depth":4},{"value":"SQL存储过程","url":"#sql存储过程","depth":5},{"value":"运输代理","url":"#运输代理","depth":5},{"value":"Webshell","url":"#webshell","depth":5},{"value":"IIS组件","url":"#iis组件","depth":5},{"value":"终端服务DLL","url":"#终端服务dll","depth":5},{"value":"19.交通信号","url":"#19交通信号","depth":4},{"value":"端口敲击","url":"#端口敲击","depth":5},{"value":"套接字筛选器","url":"#套接字筛选器","depth":5},{"value":"20.有效帐户","url":"#20有效帐户","depth":4},{"value":"默认帐户","url":"#默认帐户-1","depth":5},{"value":"域帐户","url":"#域帐户-2","depth":5},{"value":"本地帐户","url":"#本地帐户-2","depth":5},{"value":"云帐户","url":"#云帐户-2","depth":5},{"value":"六、特权升级","url":"#六特权升级","depth":3},{"value":"1.滥用高程控制机制","url":"#1滥用高程控制机制","depth":4},{"value":"Setuid和Setgid","url":"#setuid和setgid","depth":5},{"value":"绕过用户帐户控制","url":"#绕过用户帐户控制","depth":5},{"value":"Sudo和Sudo缓存","url":"#sudo和sudo缓存","depth":5},{"value":"快速提升执行","url":"#快速提升执行","depth":5},{"value":"临时高架云访问","url":"#临时高架云访问","depth":5},{"value":"TCC操纵","url":"#tcc操纵","depth":5},{"value":"2.访问令牌操作","url":"#2访问令牌操作","depth":4},{"value":"代币假冒/盗窃","url":"#代币假冒盗窃","depth":5},{"value":"使用令牌创建进程","url":"#使用令牌创建进程","depth":5},{"value":"制作和模拟代币","url":"#制作和模拟代币","depth":5},{"value":"父PID后台处理","url":"#父pid后台处理","depth":5},{"value":"SID历史注入","url":"#sid历史注入","depth":5},{"value":"3.账户操纵","url":"#3账户操纵","depth":4},{"value":"其他云凭据","url":"#其他云凭据-1","depth":5},{"value":"其他电子邮件委派权限","url":"#其他电子邮件委派权限-1","depth":5},{"value":"其他云角色","url":"#其他云角色-1","depth":5},{"value":"SSH授权密钥","url":"#ssh授权密钥-1","depth":5},{"value":"设备注册","url":"#设备注册-1","depth":5},{"value":"其他容器群集角色","url":"#其他容器群集角色-1","depth":5},{"value":"4.启动或登录自动启动执行","url":"#4启动或登录自动启动执行","depth":4},{"value":"注册表运行密钥/启动文件夹","url":"#注册表运行密钥启动文件夹-1","depth":5},{"value":"身份验证包","url":"#身份验证包-1","depth":5},{"value":"时间提供程序","url":"#时间提供程序-1","depth":5},{"value":"Winlogon帮助程序DLL","url":"#winlogon帮助程序dll-1","depth":5},{"value":"安全支持提供商","url":"#安全支持提供商-1","depth":5},{"value":"内核模块和扩展","url":"#内核模块和扩展-1","depth":5},{"value":"重新打开的应用程序","url":"#重新打开的应用程序-1","depth":5},{"value":"LSASS驱动程序","url":"#lsass驱动程序-1","depth":5},{"value":"快捷方式修改","url":"#快捷方式修改-1","depth":5},{"value":"端口监视器","url":"#端口监视器-1","depth":5},{"value":"打印处理器","url":"#打印处理器-1","depth":5},{"value":"XDG自动启动条目","url":"#xdg自动启动条目-1","depth":5},{"value":"活动设置","url":"#活动设置-1","depth":5},{"value":"登录项","url":"#登录项-1","depth":5},{"value":"5.启动或登录初始化脚本","url":"#5启动或登录初始化脚本","depth":4},{"value":"登录脚本（Windows）","url":"#登录脚本windows-1","depth":5},{"value":"登录挂钩","url":"#登录挂钩-1","depth":5},{"value":"网络登录脚本","url":"#网络登录脚本-1","depth":5},{"value":"RC脚本","url":"#rc脚本-1","depth":5},{"value":"启动项目","url":"#启动项目-1","depth":5},{"value":"6.创建或修改系统流程","url":"#6创建或修改系统流程","depth":4},{"value":"启动代理","url":"#启动代理-1","depth":5},{"value":"系统化服务","url":"#系统化服务-1","depth":5},{"value":"Windows服务","url":"#windows服务-1","depth":5},{"value":"启动精灵","url":"#启动精灵-1","depth":5},{"value":"集装箱服务","url":"#集装箱服务-1","depth":5},{"value":"7.域或租户策略修改","url":"#7域或租户策略修改","depth":4},{"value":"组策略修改","url":"#组策略修改","depth":5},{"value":"信任修改","url":"#信任修改","depth":5},{"value":"8.逃到主机","url":"#8逃到主机","depth":4},{"value":"9.事件触发的执行","url":"#9事件触发的执行-1","depth":4},{"value":"更改默认文件关联","url":"#更改默认文件关联-1","depth":5},{"value":"屏幕保护程序","url":"#屏幕保护程序-1","depth":5},{"value":"Windows Management Instrumentation事件订阅","url":"#windows-management-instrumentation事件订阅-1","depth":5},{"value":"Unix外壳配置修改","url":"#unix外壳配置修改","depth":5},{"value":"陷阱","url":"#陷阱-1","depth":5},{"value":"LC_LOAD_DYLIB添加","url":"#lc_load_dylib添加-1","depth":5},{"value":"Netsh帮助程序DLL","url":"#netsh帮助程序dll-1","depth":5},{"value":"辅助功能","url":"#辅助功能-1","depth":5},{"value":"AppCert DLL","url":"#appcert-dll-1","depth":5},{"value":"AppInit DLL","url":"#appinit-dll-1","depth":5},{"value":"应用程序填隙","url":"#应用程序填隙-1","depth":5},{"value":"图像文件执行选项注入","url":"#图像文件执行选项注入-1","depth":5},{"value":"PowerShell配置文件","url":"#powershell配置文件-1","depth":5},{"value":"Emond","url":"#emond-1","depth":5},{"value":"组件对象模型劫持","url":"#组件对象模型劫持-1","depth":5},{"value":"安装程序包","url":"#安装程序包-1","depth":5},{"value":"10.利用特权升级","url":"#10利用特权升级","depth":4},{"value":"11.劫持执行流程","url":"#11劫持执行流程-1","depth":4},{"value":"DLL搜索顺序劫持","url":"#dll搜索顺序劫持-1","depth":5},{"value":"DLL侧面加载","url":"#dll侧面加载-1","depth":5},{"value":"Dylib劫持","url":"#dylib劫持-1","depth":5},{"value":"可执行安装程序文件权限弱点","url":"#可执行安装程序文件权限弱点-1","depth":5},{"value":"动态链接劫持","url":"#动态链接劫持-1","depth":5},{"value":"Path环境变量的路径拦截","url":"#path环境变量的路径拦截-1","depth":5},{"value":"搜索顺序劫持的路径拦截","url":"#搜索顺序劫持的路径拦截-1","depth":5},{"value":"未引用路径的路径拦截","url":"#未引用路径的路径拦截-1","depth":5},{"value":"服务文件权限弱点","url":"#服务文件权限弱点-1","depth":5},{"value":"服务注册表权限弱点","url":"#服务注册表权限弱点-1","depth":5},{"value":"COR_PROFILER","url":"#cor_profiler-1","depth":5},{"value":"内核回调表","url":"#内核回调表-1","depth":5},{"value":"AppDomainManager","url":"#appdomainmanager-1","depth":5},{"value":"12.过程注入","url":"#12过程注入","depth":4},{"value":"动态链接库注入","url":"#动态链接库注入","depth":5},{"value":"便携式可执行程序注入","url":"#便携式可执行程序注入","depth":5},{"value":"线程执行劫持","url":"#线程执行劫持","depth":5},{"value":"异步过程调用","url":"#异步过程调用","depth":5},{"value":"线程本地存储","url":"#线程本地存储","depth":5},{"value":"Ptrace系统调用","url":"#ptrace系统调用","depth":5},{"value":"过程内存","url":"#过程内存","depth":5},{"value":"额外窗口内存注入","url":"#额外窗口内存注入","depth":5},{"value":"工艺空心化","url":"#工艺空心化","depth":5},{"value":"处理Doppelgänging","url":"#处理doppelgänging","depth":5},{"value":"VDSO劫持","url":"#vdso劫持","depth":5},{"value":"ListPlanting","url":"#listplanting","depth":5},{"value":"13.计划任务/作业","url":"#13计划任务作业","depth":4},{"value":"14.有效账户","url":"#14有效账户","depth":4},{"value":"总结","url":"#总结","depth":2}],"structuredData":{"@context":"https://schema.org","@type":"BlogPosting","headline":"ATT&CK学习笔记","datePublished":"2024-06-24T00:00:00.000Z","dateModified":"2024-06-24T00:00:00.000Z","description":"ATT&CK的学习笔记","image":"/static/images/twitter-card.png","url":"https://mainjaylai.github.io/Blog/blog/paper/ATTCK","author":[{"@type":"Person","name":"mainJayLai"}]}},{"title":"基于轨迹加权的混合离线强化学习数据集","date":"2024-06-23T00:00:00.000Z","tags":["paper reading","machine learing"],"draft":false,"summary":"本文提出了一种基于轨迹加权的混合离线强化学习数据集，用于评估混合离线强化学习算法的性能。","images":["/static/images/paper/trajectory-dataset/picture1.png","/static/images/paper/trajectory-dataset/picture2.png","/static/images/paper/trajectory-dataset/picture3.png","/static/images/paper/trajectory-dataset/picture4.png"],"layout":"PostSimple","bibliography":"references-data.bib","type":"Blog","readingTime":{"text":"49 min read","minutes":48.925,"time":2935500,"words":9785},"slug":"paper/trajectory-dataset","path":"blog/paper/trajectory-dataset","filePath":"blog/paper/trajectory-dataset.mdx","toc":[{"value":"目录","url":"#目录","depth":2},{"value":"摘要","url":"#摘要","depth":2},{"value":"1 介绍","url":"#1-介绍","depth":2},{"value":"2 准备工作","url":"#2-准备工作","depth":2},{"value":"3 问题表述","url":"#3-问题表述","depth":2},{"value":"3.1 正偏差方差","url":"#31-正偏差方差","depth":3},{"value":"3.2 离线RL未能有效利用高RPSV数据","url":"#32-离线rl未能有效利用高rpsv数据","depth":3},{"value":"4 方法","url":"#4-方法","depth":2},{"value":"4.1 分析","url":"#41-分析","depth":3},{"value":"4.2 回报加权","url":"#42-回报加权","depth":3},{"value":"4.3 优势加权","url":"#43-优势加权","depth":3},{"value":"5. 实验","url":"#5-实验","depth":2},{"value":"5.1 实验搭建","url":"#51-实验搭建","depth":3},{"value":"5.2 稀疏高回报数据集中的离线强化学习改进","url":"#52-稀疏高回报数据集中的离线强化学习改进","depth":3},{"value":"5.3 混合数据集中的性能提升分析","url":"#53-混合数据集中的性能提升分析","depth":3},{"value":"5.4 高回报轨迹更多的常规数据集结果","url":"#54-高回报轨迹更多的常规数据集结果","depth":3},{"value":"5.5 随机 MDP 中的结果","url":"#55-随机-mdp-中的结果","depth":3},{"value":"6 相关工作","url":"#6-相关工作","depth":2},{"value":"7 讨论","url":"#7-讨论","depth":2},{"value":"总结和经验","url":"#总结和经验","depth":2},{"value":"1. 研究背景","url":"#1-研究背景","depth":3},{"value":"2. 方法和策略","url":"#2-方法和策略","depth":3},{"value":"3. 实验设计","url":"#3-实验设计","depth":3},{"value":"4. 实验结果","url":"#4-实验结果","depth":3},{"value":"5. 分析和讨论","url":"#5-分析和讨论","depth":3},{"value":"6. 相关工作","url":"#6-相关工作-1","depth":3},{"value":"7. 实践意义","url":"#7-实践意义","depth":3},{"value":"8. 经验总结","url":"#8-经验总结","depth":3},{"value":"参考文献","url":"#参考文献","depth":2}],"structuredData":{"@context":"https://schema.org","@type":"BlogPosting","headline":"基于轨迹加权的混合离线强化学习数据集","datePublished":"2024-06-23T00:00:00.000Z","dateModified":"2024-06-23T00:00:00.000Z","description":"本文提出了一种基于轨迹加权的混合离线强化学习数据集，用于评估混合离线强化学习算法的性能。","image":"/static/images/paper/trajectory-dataset/picture1.png","url":"https://mainjaylai.github.io/Blog/blog/paper/trajectory-dataset","author":[{"@type":"Person","name":"mainJayLai"}]}}],"initialDisplayPosts":["$3","$13","$18c"],"pagination":{"currentPage":1,"totalPages":1},"title":"All Posts"}]],null],null]},["$","$L1b1",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L1b2",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"en-us","className":"__variable_946632 scroll-smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","type":"image/png","href":"https://mainjaylai.github.io/favicon.png"}],["$","link",null,{"rel":"manifest","href":"/Blog/static/favicons/manifest.json"}],["$","meta",null,{"name":"msapplication-TileColor","content":"#000000"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap","rel":"stylesheet"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=ZCOOL+QingKe+HuangYou&family=ZCOOL+XiaoWei&display=swap","rel":"stylesheet"}],["$","script",null,{"src":"https://us.umami.is/script.js","async":true}],["$","meta",null,{"name":"theme-color","media":"(prefers-color-scheme: light)","content":"#fff"}],["$","meta",null,{"name":"theme-color","media":"(prefers-color-scheme: dark)","content":"#000"}],["$","link",null,{"rel":"alternate","type":"application/rss+xml","href":"/feed.xml"}]]}],["$","body",null,{"className":"bg-white pl-[calc(100vw-100%)] text-black antialiased dark:bg-gray-950 dark:text-white","suppressHydrationWarning":true,"children":["$","$L1b3",null,{"children":[["$undefined","$undefined","$undefined",["$","$L1b4",null,{"async":true,"defer":true,"data-website-id":"bbe21cb3-3de3-4ba7-b6de-453053bc6ae8","src":"https://us.umami.is/script.js"}],"$undefined","$undefined"],["$","section",null,{"className":"mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0","children":["$","div",null,{"className":"flex h-screen flex-col justify-between font-sans","children":[["$","$L1b5",null,{"kbarConfig":{"searchDocumentsPath":"https://mainjaylai.github.io/Blog/search.json"},"children":[["$","header",null,{"className":"flex items-center justify-between py-5","children":[["$","div",null,{"children":["$","$L1b6",null,{"href":"/","aria-label":"Blog","children":["$","div",null,{"className":"flex items-center justify-between","children":[["$","div",null,{"className":"mr-3","children":["$","$L1b7",null,{"src":"https://mainjaylai.github.io/favicon.png","width":44,"height":44,"alt":"logo"}]}],["$","div",null,{"className":"hidden h-[44px] text-center text-3xl font-semibold leading-10 sm:block","children":"Blog"}]]}]}]}],["$","div",null,{"className":"flex items-center space-x-4 leading-5 sm:space-x-6","children":[[["$","$L1b6",null,{"href":"/blog","className":"navbar-item hidden font-medium text-gray-900 dark:text-gray-100 sm:block","children":"Blog"}],["$","$L1b6",null,{"href":"/tags","className":"navbar-item hidden font-medium text-gray-900 dark:text-gray-100 sm:block","children":"Tags"}],["$","a",null,{"target":"_blank","rel":"noopener noreferrer","href":"https://mainjayLai.github.io","className":"navbar-item hidden font-medium text-gray-900 dark:text-gray-100 sm:block","children":"About"}]],["$","$L1b8",null,{"aria-label":"Search","children":["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","fill":"none","viewBox":"0 0 24 24","strokeWidth":1.5,"stroke":"currentColor","className":"h-6 w-6 text-gray-900 dark:text-gray-100","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","d":"M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"}]}]}],["$","$L1b9",null,{}],["$","$L1ba",null,{}]]}]]}],["$","main",null,{"className":"mb-auto","children":["$","$L1b1",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L1b2",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","div",null,{"className":"flex flex-col items-start justify-start md:mt-24 md:flex-row md:items-center md:justify-center md:space-x-6","children":[["$","div",null,{"className":"space-x-2 pb-8 pt-6 md:space-y-5","children":["$","h1",null,{"className":"text-6xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:border-r-2 md:px-6 md:text-8xl md:leading-14","children":"404"}]}],["$","div",null,{"className":"max-w-md","children":[["$","p",null,{"className":"mb-4 text-xl font-bold leading-normal md:text-2xl","children":"Sorry we couldn't find this page."}],["$","p",null,{"className":"mb-8","children":"But dont worry, you can find plenty of other things on our homepage."}],["$","$L1b6",null,{"href":"/","className":"focus:shadow-outline-blue inline rounded-lg border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium leading-5 text-white shadow transition-colors duration-150 hover:bg-blue-700 focus:outline-none dark:hover:bg-blue-500","children":"Back to homepage"}]]}]]}],"notFoundStyles":[],"styles":null}]}]]}],["$","footer",null,{"children":["$","div",null,{"className":"mt-16 flex flex-col items-center","children":[["$","div",null,{"className":"mb-3 flex space-x-4","children":[["$","a",null,{"className":"text-sm !text-gray-500 transition hover:text-gray-600","target":"_blank","rel":"noopener noreferrer","href":"mailto:ucas.mainjay@proton.me","children":[["$","span",null,{"className":"sr-only","children":"mail"}],["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 20 20","className":"fill-current text-gray-700 hover:text-primary-500 dark:text-gray-200 dark:hover:text-primary-400 h-6 w-6","children":[["$","path",null,{"d":"M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"}],["$","path",null,{"d":"M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"}]]}]]}],["$","a",null,{"className":"text-sm !text-gray-500 transition hover:text-gray-600","target":"_blank","rel":"noopener noreferrer","href":"https://github.com/MainjayLai","children":[["$","span",null,{"className":"sr-only","children":"github"}],["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 24 24","className":"fill-current text-gray-700 hover:text-primary-500 dark:text-gray-200 dark:hover:text-primary-400 h-6 w-6","children":["$","path",null,{"d":"M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"}]}]]}],["$","a",null,{"className":"text-sm !text-gray-500 transition hover:text-gray-600","target":"_blank","rel":"noopener noreferrer","href":"https://gitlab.com/JayMain","children":[["$","span",null,{"className":"sr-only","children":"gitlab"}],["$","svg",null,{"viewBox":"0 0 1024 1024","xmlns":"http://www.w3.org/2000/svg","className":"fill-current text-gray-700 hover:text-primary-500 dark:text-gray-200 dark:hover:text-primary-400 h-6 w-6","width":"200","height":"200","children":["$","path",null,{"d":"M1022.08 579.712l-57.258667-176.426667-113.664-349.397333a19.413333 19.413333 0 0 0-36.992 0L700.501333 403.2H323.498667L209.877333 53.888C204.074667 35.84 178.56 35.84 172.8 53.76L59.136 403.157333 1.877333 579.712a39.424 39.424 0 0 0 14.122667 43.648L512 983.637333l496-360.234666a39.253333 39.253333 0 0 0 14.08-43.690667"}]}]]}],["$","a",null,{"className":"text-sm !text-gray-500 transition hover:text-gray-600","target":"_blank","rel":"noopener noreferrer","href":"https://gitee.com/lmj2001","children":[["$","span",null,{"className":"sr-only","children":"gitee"}],["$","svg",null,{"viewBox":"0 0 1024 1024","xmlns":"http://www.w3.org/2000/svg","className":"fill-current text-gray-700 hover:text-primary-500 dark:text-gray-200 dark:hover:text-primary-400 h-6 w-6","width":"200","height":"200","children":["$","path",null,{"d":"M512 992C246.895625 992 32 777.104375 32 512S246.895625 32 512 32s480 214.895625 480 480-214.895625 480-480 480z m242.9521875-533.3278125h-272.56875a23.7121875 23.7121875 0 0 0-23.71125 23.7121875l-0.024375 59.255625c0 13.08 10.6078125 23.7121875 23.6878125 23.7121875h165.96c13.104375 0 23.7121875 10.6078125 23.7121875 23.6878125v11.855625a71.1121875 71.1121875 0 0 1-71.1121875 71.1121875h-225.215625a23.7121875 23.7121875 0 0 1-23.6878125-23.7121875V423.1278125a71.1121875 71.1121875 0 0 1 71.0878125-71.1121875h331.824375a23.7121875 23.7121875 0 0 0 23.6878125-23.71125l0.0721875-59.2565625a23.7121875 23.7121875 0 0 0-23.68875-23.7121875H423.08a177.76875 177.76875 0 0 0-177.76875 177.7921875V754.953125c0 13.1034375 10.60875 23.7121875 23.713125 23.7121875h349.63125a159.984375 159.984375 0 0 0 159.984375-159.984375V482.36a23.7121875 23.7121875 0 0 0-23.7121875-23.6878125z"}]}]]}]]}],["$","div",null,{"className":"mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400","children":[["$","div",null,{"children":"MainJayLai"}],["$","div",null,{"children":" • "}],["$","div",null,{"children":"© 2024"}],["$","div",null,{"children":" • "}],["$","$L1b6",null,{"href":"/","children":"MainJayLai Blog"}]]}]]}]}]]}]}]]}]}]]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/Blog/_next/static/css/1d4b20e7f615834a.css","precedence":"next","crossOrigin":"$undefined"}]],"$L1bb"]]]]
+1bb:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Blog | MainJayLai Blog"}],["$","meta","3",{"name":"description","content":"A blog created with Next.js and Tailwind.css by mainjayLai"}],["$","meta","4",{"name":"robots","content":"index, follow"}],["$","meta","5",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","6",{"rel":"canonical","href":"https://mainjaylai.github.io/Blog/blog"}],["$","link","7",{"rel":"alternate","type":"application/rss+xml","href":"https://mainjaylai.github.io/Blog/feed.xml"}],["$","meta","8",{"property":"og:title","content":"Blog | MainJayLai Blog"}],["$","meta","9",{"property":"og:description","content":"A blog created with Next.js and Tailwind.css by mainjayLai"}],["$","meta","10",{"property":"og:url","content":"https://mainjaylai.github.io/Blog/blog"}],["$","meta","11",{"property":"og:site_name","content":"MainJayLai Blog"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://mainjaylai.github.io/Blog/static/images/twitter-card.png"}],["$","meta","14",{"property":"og:type","content":"website"}],["$","meta","15",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","16",{"name":"twitter:title","content":"Blog | MainJayLai Blog"}],["$","meta","17",{"name":"twitter:description","content":"A blog created with Next.js and Tailwind.css by mainjayLai"}],["$","meta","18",{"name":"twitter:image","content":"https://mainjaylai.github.io/Blog/static/images/twitter-card.png"}],["$","meta","19",{"name":"next-size-adjust"}]]
+1:null
